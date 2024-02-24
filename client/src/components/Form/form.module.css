@@ -1,0 +1,87 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Poppins;
+}
+.container {
+  /* border: 1px solid red; */
+  width: 90%;
+  margin: auto;
+  text-align: left;
+  margin: 15px auto;
+  padding: 10px 0px;
+}
+.line {
+  width: 40px;
+  height: 2px;
+  background-color: blue;
+}
+.caption {
+  color: blue;
+  font-weight: 700;
+  letter-spacing: 1px;
+  margin-top: 5px;
+  font-size: 1.4rem;
+}
+.text {
+  color: rgb(144, 140, 140);
+  font-size: 0.9rem;
+}
+.fromContainer {
+  /* border: 1px solid red; */
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+sup {
+  color: rgb(239, 96, 96);
+}
+
+.feild input {
+  border: 2px solid rgb(197, 195, 195);
+  border-radius: 8px;
+  width: 100%;
+  padding: 5px;
+  font-size: 1.1rem;
+  margin-top: 5px;
+}
+textarea {
+  border: 2px solid rgb(197, 195, 195);
+  border-radius: 8px;
+  width: 100%;
+  padding: 5px;
+  font-size: 1.1rem;
+  margin-top: 5px;
+}
+.btn {
+  width: 50%;
+  font-size: 1rem;
+  padding: 10px;
+  border: none;
+  border-radius: 10px;
+  background-color: rgb(62, 62, 239);
+  color: white;
+  letter-spacing: 1px;
+  font-weight: 600;
+  cursor: pointer;
+}
+@media screen and (min-width: 768px) {
+  .fromContainer {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .feild {
+    width: calc(33.33% - 10px);
+  }
+  .feild:nth-child(4) {
+    width: 100%;
+  }
+  .feild:nth-child(5) {
+    width: 100%;
+  }
+  .btn {
+    width: 20%;
+  }
+}

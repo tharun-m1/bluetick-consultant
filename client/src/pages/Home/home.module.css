@@ -50,7 +50,7 @@ p {
 }
 .services {
   /* border: 1px solid red; */
-  padding: 10px 0px;
+  padding: 10px 10px;
   margin-top: 15px;
 }
 .blogs {
@@ -62,7 +62,15 @@ p {
   padding: 5px 8px;
   font-size: 1.15rem;
 }
-
+.formContainer {
+  padding: 10px 0px;
+}
+.blogCaption {
+  width: 90%;
+  padding: 5px 30px;
+  font-size: 1.2rem;
+  font-weight: 900;
+}
 @media screen and (min-width: 600px) {
   .heroSection {
     /* border: 1px solid red; */
@@ -140,6 +148,7 @@ p {
     display: flex;
     flex-wrap: wrap;
     flex-shrink: 0;
+    padding: 10px 20px;
   }
 }
 @media screen and (min-width: 992px) {

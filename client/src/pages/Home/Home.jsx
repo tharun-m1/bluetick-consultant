@@ -4,6 +4,7 @@ import { Link } from "react-router-dom";
 import ServiceCard from "../../components/ServiceCard/ServiceCard";
 import { servicesData } from "../../serviceData";
 import { blogs } from "../../blogs";
+import Form from "../../components/Form/Form";
 function Home() {
   return (
     <>
@@ -39,13 +40,19 @@ function Home() {
             );
           })}
         </div>
-        <h1 style={{ textAlign: "left" }}>
+        <div
+          className={styles.blogCaption}
+          // style={{ textAlign: "left", padding: "0px 25px", fontSize: "1.3rem" }}
+        >
           Explore and enjoy the blogs written by our passionate techies.
-        </h1>
+        </div>
         <div className={styles.blogs}>
           {blogs.map((blog, idx) => {
             return <ServiceCard cardStatus={"blogs"} key={idx} blog={blog} />;
           })}
+        </div>
+        <div className={styles.formContainer}>
+          <Form />
         </div>
       </div>
     </>
