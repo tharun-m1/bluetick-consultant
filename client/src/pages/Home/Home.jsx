@@ -3,6 +3,7 @@ import styles from "./home.module.css";
 import { Link } from "react-router-dom";
 import ServiceCard from "../../components/ServiceCard/ServiceCard";
 import { servicesData } from "../../serviceData";
+import { blogs } from "../../blogs";
 function Home() {
   return (
     <>
@@ -30,8 +31,20 @@ function Home() {
         <div className={styles.services}>
           {servicesData.map((service, idx) => {
             return (
-              <ServiceCard key={servicesData[idx].title} service={service} />
+              <ServiceCard
+                cardStatus={"services"}
+                key={servicesData[idx].title}
+                service={service}
+              />
             );
+          })}
+        </div>
+        <h1 style={{ textAlign: "left" }}>
+          Explore and enjoy the blogs written by our passionate techies.
+        </h1>
+        <div className={styles.blogs}>
+          {blogs.map((blog, idx) => {
+            return <ServiceCard cardStatus={"blogs"} key={idx} blog={blog} />;
           })}
         </div>
       </div>
